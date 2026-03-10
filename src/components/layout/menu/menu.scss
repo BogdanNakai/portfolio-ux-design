@@ -1,18 +1,21 @@
 .menu {
+
 	// .menu__icon
-	&__icon {
-	}
+	&__icon {}
+
 	// .menu__body
 	&__body {
 		@media (max-width: toEm($mobile)) {
 			position: fixed;
-			width: 100%;
+			width: 40%;
 			height: 100%;
 			left: -100%;
 			top: 0;
 			overflow: auto;
 			padding: 50px 15px 30px 15px;
 			transition: left 0.3s;
+			background-color: var(--foundation--grey-normal);
+
 			&::before {
 				content: "";
 				position: fixed;
@@ -23,41 +26,75 @@
 				transition: left 0.3s;
 				z-index: 2;
 			}
+
 			[data-fls-menu-open] & {
 				left: 0;
+
 				&::before {
 					left: 0;
 				}
 			}
 		}
+		@media (max-width: toEm(425)){
+			width: 100%;
+		}
 	}
+
 	// .menu__list
 	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include adaptiveValue("gap", 40, 15, 0, 1440, 768);
+
 		@media (max-width: toEm($mobile)) {
+			flex-direction: column;
 		}
 	}
+
 	// .menu__item
 	&__item {
+		@media (max-width: toEm($mobile)){
+			 width: 100%; 
+		}
 	}
+
 	// .menu__link
 	&__link {
+		display: block;
+		padding: toRem(10);
+		font-weight: 500;
+		font-size: 20px;
+		@include adaptiveValue("font-size", 20, 16, 0, 1440, 1024);
+		letter-spacing: 0.03em;
+		text-align: justify;
+		color: var(--foundation--white-dark);
+
 		@media (max-width: toEm($mobile)) {
+			width: 100%;
 		}
+	}
+
+	@media (max-width: toEm($mobile)) {
+		order: 1;
 	}
 }
 
 //Burger Icon
 .icon-menu {
 	display: none;
+
 	@media (max-width: toEm($mobile)) {
 		display: block;
 		position: relative;
-		width: toRem(30);
+		width: toRem(25);
 		height: toRem(18);
 		z-index: 5;
+
 		@media (any-hover: none) {
 			cursor: default;
 		}
+
 		span,
 		&::before,
 		&::after {
@@ -67,28 +104,41 @@
 			position: absolute;
 			width: 100%;
 			height: 2px;
-			background-color: #000;
+			background-color: var(--foundation--white-dark);
+			;
 		}
+
+		span {
+			right: auto;
+			width: 70%;
+			left: 0;
+		}
+
 		&::before {
 			top: 0;
 		}
+
 		&::after {
 			bottom: 0;
 		}
+
 		span {
 			top: calc(50% - 1px);
 		}
+
 		[data-fls-menu-open] & {
 			span {
 				width: 0;
 			}
+
 			&::before,
-			&::after {
-			}
+			&::after {}
+
 			&::before {
 				top: calc(50% - 1px);
 				transform: rotate(-45deg);
 			}
+
 			&::after {
 				bottom: calc(50% - 1px);
 				transform: rotate(45deg);

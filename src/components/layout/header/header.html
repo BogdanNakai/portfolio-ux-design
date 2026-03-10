@@ -1,5 +1,15 @@
-<header data-fls-header class="header">
+<header data-fls-header data-fls-header-scroll data-fls-header-scroll-show="10000" class="header">
 	<div class="header__container">
-		<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"[[active]]"}'></include> -->
+		<div class="header__body">
+			<div class="header__logo">
+				<a href="" class="header__link-logo">
+					<img src="@img/logo.svg" alt="Logo">
+				</a>
+			</div>
+			<include src="@components/layout/menu/menu.html" locals='{"active":"[[active]]"}'></include>
+			<div class="header__btn-action">
+				<a href="#" class="header__button button">Hire Me</a>
+			</div>
+		</div>
 	</div>
 </header>
