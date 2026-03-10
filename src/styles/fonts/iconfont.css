@@ -1,0 +1,44 @@
+@font-face { 
+	font-family: "iconfont"; 
+	font-display: swap;
+	src: url("C://Users/User/Desktop/flsStart4-23-04-2025_07-49/src/assets/svgicons/preview/iconfont.woff2?58a69a370c21fe9f9c720229b296fe13") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
+}
+	[class*="--icon-xd"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-ps"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-pr"]::before { 
+		content: "\f103"; 
+	} 
+	[class*="--icon-phone"]::before { 
+		content: "\f104"; 
+	} 
+	[class*="--icon-mail"]::before { 
+		content: "\f105"; 
+	} 
+	[class*="--icon-inst"]::before { 
+		content: "\f106"; 
+	} 
+	[class*="--icon-in"]::before { 
+		content: "\f107"; 
+	} 
+	[class*="--icon-figma"]::before { 
+		content: "\f108"; 
+	} 
+	[class*="--icon-download"]::before { 
+		content: "\f109"; 
+	} 
+	[class*="--icon-be"]::before { 
+		content: "\f10a"; 
+	} 
+	[class*="--icon-basket-icon"]::before { 
+		content: "\f10b"; 
+	} 
+	[class*="--icon-ai"]::before { 
+		content: "\f10c"; 
+	} 
