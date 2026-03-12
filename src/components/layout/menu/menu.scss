@@ -1,5 +1,10 @@
 .menu {
 
+	@media (min-width: toEm($mobile)){
+		  position: relative;
+		  z-index: 3;
+	}
+
 	// .menu__icon
 	&__icon {}
 
@@ -8,24 +13,13 @@
 		@media (max-width: toEm($mobile)) {
 			position: fixed;
 			width: 40%;
-			height: 100%;
+			height: 100vh;
 			left: -100%;
 			top: 0;
 			overflow: auto;
 			padding: 50px 15px 30px 15px;
 			transition: left 0.3s;
 			background-color: var(--foundation--grey-normal);
-
-			&::before {
-				content: "";
-				position: fixed;
-				width: 100%;
-				height: 70px;
-				left: -100%;
-				top: 0;
-				transition: left 0.3s;
-				z-index: 2;
-			}
 
 			[data-fls-menu-open] & {
 				left: 0;
