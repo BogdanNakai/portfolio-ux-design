@@ -36,8 +36,8 @@ export default {
 		devfiles: true,
 	},
 	fonts: {
-		iconsfont: false,
-		download: false
+		iconsfont: true,
+		download: true
 	},
 	images: {
 		svgsprite: false,
