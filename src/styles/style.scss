@@ -190,11 +190,12 @@ body {
 		border: 2px solid var(--foundation--white-dark);
 		border-radius: 8px;
 		padding: 12px 40px;
-		font-family: var(--font-family);
 		font-weight: 700;
 		@include adaptiveValue("font-size", 20, 14, 0, 1440, 435);
 		letter-spacing: 0.03em;
-		text-align: justify;
+		text-align: center;
+		width: auto;
+		height: auto;
 		color: var(--foundation--white-dark);
 
 		@media (max-width:toEm($mobile)) {
@@ -236,6 +237,12 @@ body {
 			height: toRem(40);
 		}
 	}
+}
+
+.hide {
+	visibility: hidden;
+	position: absolute;
+	display: none;
 }
 
 .social {

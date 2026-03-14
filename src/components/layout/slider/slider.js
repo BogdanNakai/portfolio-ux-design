@@ -22,18 +22,28 @@ import "./slider.scss";
 // Повний набір стилів з node_modules
 // import 'swiper/css';
 
+let mySwiper = null; // Створюємо змінну зовні
+
+
 // Ініціалізація слайдерів
-function initSliders() {
+export function initSliders() {
+
+	if (mySwiper !== null) {
+		mySwiper.destroy(true, true);
+	}
+
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
 	if (document.querySelector('.swiper')) { // <- Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', { // <- Вказуємо склас потрібного слайдера
+		mySwiper = new Swiper('.swiper', { // <- Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
+			observeSlideChildren: true,
+			loop: false,
 			slidesPerView: 1,
 			spaceBetween: 18,
 			//autoHeight: true,

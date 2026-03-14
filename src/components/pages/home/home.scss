@@ -19,6 +19,7 @@
 	}
 
 	&__content {
+		position: relative;
 		flex: 0 1 41.71%;
 
 		@media (max-width:toEm($mobile)) {
@@ -28,6 +29,13 @@
 		@media (max-width: toEm($mobileSmall)) {
 			flex: 1 1 100%;
 		}
+	}
+
+	&__decoration {
+		position: absolute;
+		z-index: -1;
+		top: -53px;
+		left: -33px;
 	}
 
 	&__info {
@@ -92,7 +100,6 @@
 		@include adaptiveValue("gap", 30, 14, 0, 1440, 768);
 		@include adaptiveValue("padding", 24, 16, 0, 2800, 768);
 		background: rgba(255, 255, 255, 0.04);
-
 	}
 
 	&__experiences-block {
@@ -474,6 +481,8 @@
 		@media (min-width:toEm(500)) {
 			width: auto !important;
 		}
+
+	
 	}
 
 	&__picyures {
