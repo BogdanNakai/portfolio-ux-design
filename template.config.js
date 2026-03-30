@@ -37,7 +37,7 @@ export default {
 	},
 	fonts: {
 		iconsfont: true,
-		download: true
+		download: false
 	},
 	images: {
 		svgsprite: false,

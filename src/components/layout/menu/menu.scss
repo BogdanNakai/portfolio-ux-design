@@ -70,11 +70,6 @@
 			width: 100%;
 		}
 
-		&.--navigator-active {
-			color: var(--foundation--orange-normal);
-			font-weight: 700;
-		}
-
 		@media (any-hover: hover) {
 			&:hover {
 				transform: scale(1.09);
@@ -97,6 +92,11 @@
 
 
 		&--active {
+			color: var(--foundation--orange-normal);
+			font-weight: 700;
+		}
+
+		&.--navigator-active {
 			color: var(--foundation--orange-normal);
 			font-weight: 700;
 		}

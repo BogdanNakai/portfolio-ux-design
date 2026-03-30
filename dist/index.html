@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1774896502348"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1774896502348">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__logo">
+							<a href="" class="header__link-logo">
+								<img src="data:image/svg+xml,%3csvg%20width='77'%20height='22'%20viewBox='0%200%2077%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.10001%2021.27C1.52001%2021.27%201.02001%2021.06%200.600011%2020.64C0.200011%2020.22%201.11088e-05%2019.72%201.11088e-05%2019.14V2.97002C1.11088e-05%201.97002%200.330011%201.23002%200.990011%200.750019C1.65001%200.250018%202.66001%201.80006e-05%204.02001%201.80006e-05V17.79H12.12C13.06%2017.79%2013.77%2018.09%2014.25%2018.69C14.73%2019.27%2014.97%2020.13%2014.97%2021.27H2.10001ZM24.7952%2021.54C23.1552%2021.54%2021.6552%2021.22%2020.2952%2020.58C18.9352%2019.92%2017.8552%2019.03%2017.0552%2017.91C16.2752%2016.79%2015.8852%2015.57%2015.8852%2014.25V7.26002C15.8852%205.94002%2016.2752%204.73002%2017.0552%203.63002C17.8552%202.51002%2018.9352%201.63002%2020.2952%200.990018C21.6552%200.330018%2023.1552%201.80006e-05%2024.7952%201.80006e-05C26.4352%201.80006e-05%2027.9352%200.330018%2029.2952%200.990018C30.6752%201.63002%2031.7552%202.51002%2032.5352%203.63002C33.3352%204.73002%2033.7352%205.94002%2033.7352%207.26002V14.25C33.7352%2015.57%2033.3352%2016.79%2032.5352%2017.91C31.7552%2019.03%2030.6752%2019.92%2029.2952%2020.58C27.9352%2021.22%2026.4352%2021.54%2024.7952%2021.54ZM24.7952%2018.03C26.2952%2018.03%2027.4952%2017.68%2028.3952%2016.98C29.2952%2016.26%2029.7452%2015.33%2029.7452%2014.19V7.35002C29.7452%206.19002%2029.2952%205.26002%2028.3952%204.56002C27.4952%203.84002%2026.2952%203.48002%2024.7952%203.48002C23.3152%203.48002%2022.1252%203.84002%2021.2252%204.56002C20.3252%205.26002%2019.8752%206.19002%2019.8752%207.35002V14.19C19.8752%2015.33%2020.3252%2016.26%2021.2252%2016.98C22.1252%2017.68%2023.3152%2018.03%2024.7952%2018.03ZM46.1822%2021.54C44.4022%2021.54%2042.8122%2021.2%2041.4122%2020.52C40.0322%2019.84%2038.9522%2018.89%2038.1722%2017.67C37.3922%2016.45%2037.0022%2015.06%2037.0022%2013.5V7.98002C37.0022%206.42002%2037.3822%205.04002%2038.1422%203.84002C38.9222%202.62002%2039.9922%201.68002%2041.3522%201.02002C42.7122%200.340018%2044.2722%201.80006e-05%2046.0322%201.80006e-05C47.7922%201.80006e-05%2049.3522%200.270018%2050.7122%200.810018C52.0922%201.33002%2053.1622%202.06002%2053.9222%203.00002C54.6822%203.94002%2055.0622%205.02002%2055.0622%206.24002C55.0622%206.98002%2054.8122%207.56002%2054.3122%207.98002C53.8322%208.40002%2053.1822%208.61002%2052.3622%208.61002C51.9622%208.61002%2051.5222%208.55002%2051.0422%208.43002C51.0822%207.95002%2051.1022%207.48002%2051.1022%207.02002C51.1022%205.96002%2050.6322%205.10002%2049.6922%204.44002C48.7522%203.78002%2047.5322%203.45002%2046.0322%203.45002C44.5522%203.45002%2043.3422%203.87002%2042.4022%204.71002C41.4822%205.55002%2041.0222%206.64002%2041.0222%207.98002V13.5C41.0222%2014.84%2041.5022%2015.94%2042.4622%2016.8C43.4222%2017.66%2044.6622%2018.09%2046.1822%2018.09C47.6622%2018.09%2048.8622%2017.75%2049.7822%2017.07C50.7222%2016.37%2051.1922%2015.47%2051.1922%2014.37V13.44H48.6122C47.8522%2013.44%2047.2322%2013.15%2046.7522%2012.57C46.2722%2011.97%2046.0322%2011.2%2046.0322%2010.26H53.3222C53.8822%2010.26%2054.3322%2010.43%2054.6722%2010.77C55.0122%2011.11%2055.1822%2011.56%2055.1822%2012.12V14.46C55.1822%2015.84%2054.8022%2017.07%2054.0422%2018.15C53.2822%2019.21%2052.2122%2020.04%2050.8322%2020.64C49.4722%2021.24%2047.9222%2021.54%2046.1822%2021.54ZM67.3179%2021.54C65.6779%2021.54%2064.1779%2021.22%2062.8179%2020.58C61.4579%2019.92%2060.3779%2019.03%2059.5779%2017.91C58.7979%2016.79%2058.4079%2015.57%2058.4079%2014.25V7.26002C58.4079%205.94002%2058.7979%204.73002%2059.5779%203.63002C60.3779%202.51002%2061.4579%201.63002%2062.8179%200.990018C64.1779%200.330018%2065.6779%201.80006e-05%2067.3179%201.80006e-05C68.9579%201.80006e-05%2070.4579%200.330018%2071.8179%200.990018C73.1979%201.63002%2074.2779%202.51002%2075.0579%203.63002C75.8579%204.73002%2076.2579%205.94002%2076.2579%207.26002V14.25C76.2579%2015.57%2075.8579%2016.79%2075.0579%2017.91C74.2779%2019.03%2073.1979%2019.92%2071.8179%2020.58C70.4579%2021.22%2068.9579%2021.54%2067.3179%2021.54ZM67.3179%2018.03C68.8179%2018.03%2070.0179%2017.68%2070.9179%2016.98C71.8179%2016.26%2072.2679%2015.33%2072.2679%2014.19V7.35002C72.2679%206.19002%2071.8179%205.26002%2070.9179%204.56002C70.0179%203.84002%2068.8179%203.48002%2067.3179%203.48002C65.8379%203.48002%2064.6479%203.84002%2063.7479%204.56002C62.8479%205.26002%2062.3979%206.19002%2062.3979%207.35002V14.19C62.3979%2015.33%2062.8479%2016.26%2063.7479%2016.98C64.6479%2017.68%2065.8379%2018.03%2067.3179%2018.03Z'%20fill='url(%23paint0_linear_587_923)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_587_923'%20x1='-1.76999'%20y1='9.14099'%20x2='78.23'%20y2='9.14099'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FA6E00'/%3e%3cstop%20offset='1'%20stop-color='%23E60026'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Logo">
+							</a>
+						</div>
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#home" href="" class="menu__link">Home</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#services" href="" class="menu__link">Services</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#about-me" href="" class="menu__link">About me</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#portfolio" href="" class="menu__link">Portfolio</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#contact-me" href="" class="menu__link">Contact me</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.js?v=1774896502348on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+						<div class="header__btn-action">
+							<a href="#" class="header__button button">Hire Me</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main data-fls-watcher-once-root="" class="page page--home">
+				<section data-fls-watcher="navigator" id="home" class="hero">
+					<div class="hero__container">
+						<div class="hero__body">
+							<div class="hero__content">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="hero__info --hide-element">
+									<p class="hero__suptitle">Hi I am</p>
+									<p class="hero__name">Mahmood Fazile</p>
+									<p class="hero__title-profession">UI/UX designer</p>
+								</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" class="hero__buttons-social social --hide-element">
+									<a href="#" class="social__link --icon-inst"></a>
+									<a href="#" class="social__link --icon-in"></a>
+									<a href="#" class="social__link --icon-dribbble"></a>
+									<a href="#" class="social__link --icon-behance"></a>
+								</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" class="hero__buttons-action --hide-element">
+									<a href="#" class="hero__button button button_hero">Hire Me</a>
+									<button type="button" class="hero__button button button_black">Downlead CV</button>
+								</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" class="hero__experiences --hide-element">
+									<div class="hero__experiences-block">
+										<p class="hero__experiences-number">5+</p>
+										<p class="hero__experiences-text">Experiences</p>
+									</div>
+									<div class="hero__experiences-block">
+										<p class="hero__experiences-number">20+</p>
+										<p class="hero__experiences-text">Project done</p>
+									</div>
+									<div class="hero__experiences-block">
+										<p class="hero__experiences-number">80+</p>
+										<p class="hero__experiences-text">Happy Clients</p>
+									</div>
+								</div>
+								<div class="hero__decoration">
+									<img src="./assets/img/stain_decoration.svg" alt="Image">
+								</div>
+							</div>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="hero__visual-info --hide-element">
+								<div class="hero__pictures-user">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/man-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/man-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/man.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-watcher="navigator" id="services" class="services">
+					<div class="services__container">
+						<div class="services__body">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="services__info info --hide-element">
+								<h2 class="services__title title">Services</h2>
+								<p class="services__text text">
+									Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis
+						ligula aliquam
+								</p>
+							</div>
+							<div class="services__carts">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="services__list --hide-element">
+									<div class="services__item">
+										<div class="services__icon">
+											<img src="data:image/png;base64,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" alt="Image">
+										</div>
+										<p class="services__title-cart">App Design</p>
+										<p class="services__text-cart">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="services__item --hide-element">
+										<div class="services__icon">
+											<img src="data:image/png;base64,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" alt="Image">
+										</div>
+										<p class="services__title-cart">App Design</p>
+										<p class="services__text-cart">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="services__item --hide-element">
+										<div class="services__icon">
+											<img src="data:image/png;base64,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" alt="Image">
+										</div>
+										<p class="services__title-cart">App Design</p>
+										<p class="services__text-cart">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="services__item --hide-element">
+										<div class="services__icon">
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABsRJREFUeAHtW1GS00YQfSN5CfnbnABxAswJ2D1BlhNg/lIVgr0nwHsCbCD5ZfcEWU6AOQHOCRAniP4ga1vKa1vesqUZaTSSvaZKr8pV9kgzGvV093S/HgMtWrRo0WLvUNgTvv2GYP39/n1EaoQIB4ydCSYZ4Bgx+onCSQJ02XScuSXiw6fzGB8WPq5/HiHEAaFxwdwM0O0keE1hnKAaLm8ULg5FQI0KJunjdQwMUANegqF6gwvcMRoRjJhNkuBvBy3RgpOaKIWnRX6Izwz4zPd8ZsD7wzjG1czHpCmNqy0YEUqc4DO/BtrrfEn6mU/iT/g9Sh96nMToegq/YuV/dBObUjinJuHEfXzULYQHjNj5oq5zry0Y0wRTgVwcjTAp6j8b4ITm8xoaAXFy194YT3X9Fn18gWExiJD+6rSO9niogeQlXumEslA474xxWiYUgdzjj/E4Vnm/wrHPFn/ofRafMTaPiuAetVg2AjjCWWPExmlCX3LtCs87I1zCAfMBeop+I9Mc0eQe6kyD95/RJE9Skww0Q0bUnMcumuOsMRTKq1wbV91VKALpy3GzmnDMWGdguP/66A0G1LiHsiBsCrN9f8oL2gpOGmPQllAmiAag8R9GrdHM62OmryyYlVlvwkljFjpnu8A5GkK8Wv1NHM9R7i8ouJC+J+esfY12l8FJMPQDTzJNYecdrtEQ0tXd1o4YZzZ9740YFiS42myTDWKZolSAq4/Jrt4EDSPJjOmr3GKY+3p5P7eYVws+XQUTbD00xj9oGFz1rTET2K+4TuNongEqwFUwuUwZDUN5uR0mQDVszYlR9F5MaeeIF7sXfhFcBRNu/lCq8mqWIjumgn2QljraYKstqSZYt10pM8kqjtEWHPPR5u+4gsYwnMjtYMrHFBXgFsfkHWO36nZYhCWlkImVuOKfbPurfNwS7iXAY69szGIM250Q45nmmRNYQBJb5B31BBXhnEQybP8X27uTc8K2CUNYb5VuGBhEJwqiA0dIssf8ZVNl1wnbKWpAmEBkHWdspjrFhBcLnHke+rEmbRB6wmWxahFVBrLokqv7HA7geCLYXqZZqy0p6f4+KcihGNSN6VucTLxWHKNJ9gQ9Edi3gf0WvjSf/pIe7WWviRno+vgrjnknQhHUpja5cgN/RU3qcLmYYXzvL/1WOXtBkslfkkw9aEL+eEWNDrPtJpIsRUTzuWAyOUINNFIlIG879IpT+zBHhq9WOzB1MAnl9nqea45ES+g0R01UORurK5VoThVYr7hQoZI6SPBWNU4pQ7MFNwODZt2f8QZX/Vw4FdwxdlK7lpXkWz5TlgU421LLPrETwawhGiQ0qBTX1HbuEzFe+UpqYeqzdnToJx9atGjhjJ36mLvA+sCScLzcIb/y+6TTwbSqH9uJYGRy37/j2PcYY3jlPM18jrCp42eGfGt5QCCO8aHz1q5SWkswcq7u6AgnfPlHHCgoi2YtIVFymEikzOoDA7ipKaXQQUOH5Ma3oSEqC6Ysv9kRQkjwt8DV0bviWMd0LCUDia5PiwJJa8GIQHxff+xjzwiFnzGZhJgx2cShxE1KfyhyjUJirVQw6TEy4T2sSqT7ghxH+4+0R5lJyMEkFaNHQeXoUiHb5LSEYXwzKuQ+K5/AXYCfkKYWJau2aFHC7nfSsSXjpqkEUjbh54FatXfLnmtLWxreJSIJ9ovu/kLBFNnrsrascDVDcwcCc88Q2lKez4K+bsUFojne2I5O1R1M8uZciD+5refHtR9EkHIew33nN8u8a+U7cgKiz3lusw3PX1DA/pJTvkVlwei0pc4xsqagWzAbrTGcLjWakpHz1ZjQ5V0LRSBz0Jx/Mfqi5ebBWlNKhQaZy9emfp5hsCDbRhO6wqEgzhf8kt/xQHsrtYRzH0Kzbd8oc1nmYE87FCGxrGOnCxxor5Vs9SbB5B8c33lgdwuGAzkHrHOgWL1H9l1COaxY5ha0gkl3nHDrRoV+nQPFTSGdQ2+zLTHUpuU9JPRfUqf8cFc753s8tqFQjbvS7CVLIipXEomoORf+23o1Gxds0AnD3DXL7boKVNFECv48EfJzzWLaVZXM1wWSo3U8PKFAJHTX5T2NnS/ehE1K8BnFWXSUFtOmVNWvjDGWgrLlWNZ/CRTuhoX5QAgmfpeUoJsUJ4GC2n+mMMEmiaxVK9oVxGfMLJJIV9jTDqsyrOwGAe4WjdSmy1CJqFrXiaoU0xqCZOtTSJ42au4EehGcqc1USF35W4wFKVQVSxqDHO0nqUt3UJ3MrovGyXA5F7PBsQQ2fTa5m0P7m3GLFi1atGjRosWPhv8B+6ruMiK5SDkAAAAASUVORK5CYII=" alt="Image">
+										</div>
+										<p class="services__title-cart">App Design</p>
+										<p class="services__text-cart">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="services__item --hide-element">
+										<div class="services__icon">
+											<img src="data:image/png;base64,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" alt="Image">
+										</div>
+										<p class="services__title-cart">App Design</p>
+										<p class="services__text-cart">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="services__item --hide-element">
+										<div class="services__icon">
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABsRJREFUeAHtW1GS00YQfSN5CfnbnABxAswJ2D1BlhNg/lIVgr0nwHsCbCD5ZfcEWU6AOQHOCRAniP4ga1vKa1vesqUZaTSSvaZKr8pV9kgzGvV093S/HgMtWrRo0WLvUNgTvv2GYP39/n1EaoQIB4ydCSYZ4Bgx+onCSQJ02XScuSXiw6fzGB8WPq5/HiHEAaFxwdwM0O0keE1hnKAaLm8ULg5FQI0KJunjdQwMUANegqF6gwvcMRoRjJhNkuBvBy3RgpOaKIWnRX6Izwz4zPd8ZsD7wzjG1czHpCmNqy0YEUqc4DO/BtrrfEn6mU/iT/g9Sh96nMToegq/YuV/dBObUjinJuHEfXzULYQHjNj5oq5zry0Y0wRTgVwcjTAp6j8b4ITm8xoaAXFy194YT3X9Fn18gWExiJD+6rSO9niogeQlXumEslA474xxWiYUgdzjj/E4Vnm/wrHPFn/ofRafMTaPiuAetVg2AjjCWWPExmlCX3LtCs87I1zCAfMBeop+I9Mc0eQe6kyD95/RJE9Skww0Q0bUnMcumuOsMRTKq1wbV91VKALpy3GzmnDMWGdguP/66A0G1LiHsiBsCrN9f8oL2gpOGmPQllAmiAag8R9GrdHM62OmryyYlVlvwkljFjpnu8A5GkK8Wv1NHM9R7i8ouJC+J+esfY12l8FJMPQDTzJNYecdrtEQ0tXd1o4YZzZ9740YFiS42myTDWKZolSAq4/Jrt4EDSPJjOmr3GKY+3p5P7eYVws+XQUTbD00xj9oGFz1rTET2K+4TuNongEqwFUwuUwZDUN5uR0mQDVszYlR9F5MaeeIF7sXfhFcBRNu/lCq8mqWIjumgn2QljraYKstqSZYt10pM8kqjtEWHPPR5u+4gsYwnMjtYMrHFBXgFsfkHWO36nZYhCWlkImVuOKfbPurfNwS7iXAY69szGIM250Q45nmmRNYQBJb5B31BBXhnEQybP8X27uTc8K2CUNYb5VuGBhEJwqiA0dIssf8ZVNl1wnbKWpAmEBkHWdspjrFhBcLnHke+rEmbRB6wmWxahFVBrLokqv7HA7geCLYXqZZqy0p6f4+KcihGNSN6VucTLxWHKNJ9gQ9Edi3gf0WvjSf/pIe7WWviRno+vgrjnknQhHUpja5cgN/RU3qcLmYYXzvL/1WOXtBkslfkkw9aEL+eEWNDrPtJpIsRUTzuWAyOUINNFIlIG879IpT+zBHhq9WOzB1MAnl9nqea45ES+g0R01UORurK5VoThVYr7hQoZI6SPBWNU4pQ7MFNwODZt2f8QZX/Vw4FdwxdlK7lpXkWz5TlgU421LLPrETwawhGiQ0qBTX1HbuEzFe+UpqYeqzdnToJx9atGjhjJ36mLvA+sCScLzcIb/y+6TTwbSqH9uJYGRy37/j2PcYY3jlPM18jrCp42eGfGt5QCCO8aHz1q5SWkswcq7u6AgnfPlHHCgoi2YtIVFymEikzOoDA7ipKaXQQUOH5Ma3oSEqC6Ysv9kRQkjwt8DV0bviWMd0LCUDia5PiwJJa8GIQHxff+xjzwiFnzGZhJgx2cShxE1KfyhyjUJirVQw6TEy4T2sSqT7ghxH+4+0R5lJyMEkFaNHQeXoUiHb5LSEYXwzKuQ+K5/AXYCfkKYWJau2aFHC7nfSsSXjpqkEUjbh54FatXfLnmtLWxreJSIJ9ovu/kLBFNnrsrascDVDcwcCc88Q2lKez4K+bsUFojne2I5O1R1M8uZciD+5refHtR9EkHIew33nN8u8a+U7cgKiz3lusw3PX1DA/pJTvkVlwei0pc4xsqagWzAbrTGcLjWakpHz1ZjQ5V0LRSBz0Jx/Mfqi5ebBWlNKhQaZy9emfp5hsCDbRhO6wqEgzhf8kt/xQHsrtYRzH0Kzbd8oc1nmYE87FCGxrGOnCxxor5Vs9SbB5B8c33lgdwuGAzkHrHOgWL1H9l1COaxY5ha0gkl3nHDrRoV+nQPFTSGdQ2+zLTHUpuU9JPRfUqf8cFc753s8tqFQjbvS7CVLIipXEomoORf+23o1Gxds0AnD3DXL7boKVNFECv48EfJzzWLaVZXM1wWSo3U8PKFAJHTX5T2NnS/ehE1K8BnFWXSUFtOmVNWvjDGWgrLlWNZ/CRTuhoX5QAgmfpeUoJsUJ4GC2n+mMMEmiaxVK9oVxGfMLJJIV9jTDqsyrOwGAe4WjdSmy1CJqFrXiaoU0xqCZOtTSJ42au4EehGcqc1USF35W4wFKVQVSxqDHO0nqUt3UJ3MrovGyXA5F7PBsQQ2fTa5m0P7m3GLFi1atGjRosWPhv8B+6ruMiK5SDkAAAAASUVORK5CYII=" alt="Image">
+										</div>
+										<p class="services__title-cart">App Design</p>
+										<p class="services__text-cart">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-watcher="navigator" id="about-me" class="about">
+					<div class="about__container">
+						<div class="about__body">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="about__info info --hide-element">
+								<h2 class="about__title title">About Me</h2>
+								<p class="about__info-text text">User Interface and User Experience and Also video editing</p>
+							</div>
+							<div class="about__content">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="about__pictures --hide-element">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/man_about-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/man_about-1200.webp" type="image/webp">
+										<img alt="Man" src="./assets/img/man_about.webp">
+									</picture>
+								</div>
+								<div class="about__info-about-me">
+									<p data-fls-watcher="" data-fls-watcher-once="" class="about__text --hide-element">
+										A software engineer, the modern-day architect of digital realms, navigates the ethereal landscapes
+							of code, sculpting
+							intangible structures that shape our technological world. With fingers poised over keyboards like
+							virtuoso pianists,
+							they compose symphonies of logic, their minds a labyrinth of algorithms and solutions.Their canvas
+							is a screen, a vast
+							expanse where lines of code dance in intricate patterns, weaving the fabric of programs and
+							applications. Each keystroke
+							is a brushstroke, crafting intricate architectures and breathing life into innovative designs.In
+							this digital atelier,
+							they don the mantle of problem solvers, confronting bugs and glitches like valiant knights in an
+							ever-evolving quest for
+							perfection. Debugging becomes a noble pursuit, unraveling the mysteries hidden within the tangled
+							webs of code.
+							designs.In this digital atelier.
+									</p>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="about__box-button --hide-element">
+										<button class="about__button-download button button_download --icon-download">Download CV</button>
+									</div>
+								</div>
+							</div>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="about__profile --hide-element -watcher-view">
+								<div class="about__technology about__technology_figma">
+									<div class="about__circle circle" style="--c: url(#progressGradient);">
+										<svg viewbox="0 0 100 100">
+											<defs>
+												<linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+													<stop offset="0%" stop-color="#fd6f00"></stop>
+													<stop offset="100%" stop-color="#e46400"></stop>
+												</linearGradient>
+											</defs>
+											<circle cx="50" cy="50" r="45"></circle>
+											<circle cx="50" cy="50" r="45"></circle>
+										</svg>
+										<span class="about__circle-img">
+											<img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M31.9734%2038.5511C33.7106%2039.9445%2035.8623%2040.72%2038.089%2040.7554C40.3157%2040.7907%2042.4909%2040.0838%2044.2714%2038.7461C46.052%2037.4085%2047.3366%2035.5162%2047.9227%2033.3677C48.5089%2031.2192%2048.3632%2028.9368%2047.5087%2026.8802C46.7941%2025.1531%2045.6111%2023.66%2044.0932%2022.5695C45.3881%2021.6413%2046.443%2020.4178%2047.1704%2019.0004C47.8979%2017.583%2048.2769%2016.0125%2048.276%2014.4194C48.276%2011.759%2047.2192%209.20763%2045.3381%207.32648C43.4569%205.44532%2040.9055%204.3885%2038.2452%204.3885H21.945C19.8214%204.38789%2017.7523%205.06129%2016.0358%206.31173C14.3193%207.56217%2013.044%209.32511%2012.3935%2011.3467C11.7429%2013.3682%2011.7508%2015.5441%2012.4159%2017.5609C13.081%2019.5778%2014.369%2021.3314%2016.0945%2022.5695C14.8002%2023.4981%2013.7456%2024.7218%2013.0181%2026.139C12.2907%2027.5563%2011.9113%2029.1265%2011.9113%2030.7195C11.9113%2032.3126%2012.2907%2033.8827%2013.0181%2035.3C13.7456%2036.7173%2014.8002%2037.9409%2016.0945%2038.8696C14.6981%2039.8717%2013.5825%2041.2157%2012.8549%2042.7729C12.1272%2044.33%2011.8119%2046.048%2011.9392%2047.7621C12.0664%2049.4761%2012.632%2051.1287%2013.5816%2052.5614C14.5312%2053.994%2015.833%2055.1586%2017.3621%2055.9434C18.8912%2056.7283%2020.5964%2057.107%2022.314%2057.0434C24.0316%2056.9797%2025.704%2056.4758%2027.1708%2055.58C28.6377%2054.6841%2029.8497%2053.4264%2030.6907%2051.9274C31.5316%2050.4284%2031.9733%2048.7385%2031.9734%2047.0197V38.5511ZM21.9425%208.15008C20.2798%208.15008%2018.6852%208.81059%2017.5095%209.98631C16.3337%2011.162%2015.6732%2012.7567%2015.6732%2014.4194C15.6732%2016.0821%2016.3337%2017.6767%2017.5095%2018.8524C18.6852%2020.0281%2020.2798%2020.6887%2021.9425%2020.6887H28.2118V8.15008H21.9425ZM28.2118%2040.7504H21.9425C20.7026%2040.7504%2019.4905%2041.1181%2018.4595%2041.807C17.4285%2042.4958%2016.6249%2043.475%2016.1504%2044.6205C15.6759%2045.7661%2015.5518%2047.0266%2015.7937%2048.2428C16.0356%2049.4589%2016.6327%2050.576%2017.5095%2051.4527C18.3862%2052.3295%2019.5033%2052.9266%2020.7194%2053.1685C21.9356%2053.4104%2023.1961%2053.2863%2024.3417%2052.8118C25.4872%2052.3372%2026.4664%2051.5337%2027.1552%2050.5027C27.8441%2049.4717%2028.2118%2048.2596%2028.2118%2047.0197V40.7504ZM21.9425%2024.4502C20.2798%2024.4502%2018.6852%2025.1108%2017.5095%2026.2865C16.3337%2027.4622%2015.6732%2029.0568%2015.6732%2030.7195C15.6732%2032.3822%2016.3337%2033.9769%2017.5095%2035.1526C18.6852%2036.3283%2020.2798%2036.9888%2021.9425%2036.9888H28.2118V24.4502H21.9425ZM31.9734%2030.7195C31.9734%2032.3826%2032.634%2033.9775%2033.81%2035.1535C34.9859%2036.3294%2036.5809%2036.9901%2038.2439%2036.9901C39.907%2036.9901%2041.5019%2036.3294%2042.6779%2035.1535C43.8538%2033.9775%2044.5145%2032.3826%2044.5145%2030.7195C44.5145%2029.0565%2043.8538%2027.4615%2042.6779%2026.2856C41.5019%2025.1096%2039.907%2024.449%2038.2439%2024.449C36.5809%2024.449%2034.9859%2025.1096%2033.81%2026.2856C32.634%2027.4615%2031.9734%2029.0565%2031.9734%2030.7195ZM38.2427%2020.6887C39.9054%2020.6887%2041.5%2020.0281%2042.6757%2018.8524C43.8514%2017.6767%2044.512%2016.0821%2044.512%2014.4194C44.512%2012.7567%2043.8514%2011.162%2042.6757%209.98631C41.5%208.81059%2039.9054%208.15008%2038.2427%208.15008H31.9734V20.6887H38.2427Z'%20fill='%23959595'/%3e%3c/svg%3e" alt="Image">
+										</span>
+									</div>
+									<p class="about__technology-procent">100%</p>
+									<p class="about__technology-name">Figma</p>
+								</div>
+								<div class="about__technology about__technology_adobeXd">
+									<div class="about__circle circle" style="--c: url(#progressGradient);">
+										<svg viewbox="0 0 100 100">
+											<defs>
+												<linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+													<stop offset="0%" stop-color="#fd6f00"></stop>
+													<stop offset="100%" stop-color="#e46400"></stop>
+												</linearGradient>
+											</defs>
+											<circle cx="50" cy="50" r="45"></circle>
+											<circle cx="50" cy="50" r="45"></circle>
+										</svg>
+										<span class="about__circle-img">
+											<img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.554%2020.0617L27.5849%2040.1235M17.554%2040.1235L27.5849%2020.0617M52.662%2017.554V42.6312C52.662%2045.2915%2051.6052%2047.8429%2049.724%2049.7241C47.8429%2051.6052%2045.2915%2052.662%2042.6312%2052.662H17.554C14.8936%2052.662%2012.3423%2051.6052%2010.4611%2049.7241C8.57995%2047.8429%207.52313%2045.2915%207.52313%2042.6312V17.554C7.52313%2014.8937%208.57995%2012.3423%2010.4611%2010.4611C12.3423%208.57997%2014.8936%207.52315%2017.554%207.52315H42.6312C45.2915%207.52315%2047.8429%208.57997%2049.724%2010.4611C51.6052%2012.3423%2052.662%2014.8937%2052.662%2017.554Z'%20stroke='%23959595'%20stroke-width='4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M42.6311%2030.0926V38.6188C42.6311%2038.8164%2042.5922%2039.0121%2042.5166%2039.1946C42.441%2039.3772%2042.3302%2039.543%2042.1905%2039.6828C42.0507%2039.8225%2041.8849%2039.9333%2041.7023%2040.0089C41.5198%2040.0845%2041.3241%2040.1235%2041.1265%2040.1235H37.6157C36.2855%2040.1235%2035.0098%2039.5951%2034.0693%2038.6545C33.1287%2037.7139%2032.6003%2036.4382%2032.6003%2035.108C32.6003%2033.7779%2033.1287%2032.5022%2034.0693%2031.5616C35.0098%2030.621%2036.2855%2030.0926%2037.6157%2030.0926H42.6311ZM42.6311%2030.0926V22.5694'%20stroke='%23959595'%20stroke-width='4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Image">
+										</span>
+									</div>
+									<p class="about__technology-procent">100%</p>
+									<p class="about__technology-name">Adobe XD</p>
+								</div>
+								<div class="about__technology about__technology_adobePhotoShop">
+									<div class="about__circle circle" style="--p:85; --c: url(#progressGradient);">
+										<svg viewbox="0 0 100 100">
+											<defs>
+												<linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+													<stop offset="0%" stop-color="#fd6f00"></stop>
+													<stop offset="100%" stop-color="#e46400"></stop>
+												</linearGradient>
+											</defs>
+											<circle cx="50" cy="50" r="45"></circle>
+											<circle cx="50" cy="50" r="45"></circle>
+										</svg>
+										<span class="about__circle-img">
+											<img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M52.6621%2017.554V42.6312C52.6621%2045.2915%2051.6052%2047.8429%2049.7241%2049.7241C47.8429%2051.6052%2045.2915%2052.662%2042.6312%2052.662H17.554C14.8937%2052.662%2012.3423%2051.6052%2010.4611%2049.7241C8.57998%2047.8429%207.52316%2045.2915%207.52316%2042.6312V17.554C7.52316%2014.8937%208.57998%2012.3423%2010.4611%2010.4611C12.3423%208.57997%2014.8937%207.52315%2017.554%207.52315H42.6312C45.2915%207.52315%2047.8429%208.57997%2049.7241%2010.4611C51.6052%2012.3423%2052.6621%2014.8937%2052.6621%2017.554Z'%20stroke='%23959595'%20stroke-width='4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M17.554%2040.1235V30.0926M17.554%2030.0926V20.0617H22.5694C23.8996%2020.0617%2025.1753%2020.5901%2026.1159%2021.5307C27.0565%2022.4713%2027.5849%2023.747%2027.5849%2025.0772C27.5849%2026.4073%2027.0565%2027.683%2026.1159%2028.6236C25.1753%2029.5642%2023.8996%2030.0926%2022.5694%2030.0926H17.554ZM42.6312%2027.5849C41.8638%2026.0476%2040.2915%2025.0772%2038.5737%2025.0772H37.6157C36.6181%2025.0772%2035.6613%2025.4735%2034.9559%2026.1789C34.2505%2026.8843%2033.8542%2027.8411%2033.8542%2028.8387C33.8542%2029.8364%2034.2505%2030.7931%2034.9559%2031.4986C35.6613%2032.204%2036.6181%2032.6003%2037.6157%2032.6003H38.8696C39.8672%2032.6003%2040.824%2032.9966%2041.5294%2033.702C42.2349%2034.4075%2042.6312%2035.3643%2042.6312%2036.3619C42.6312%2037.3595%2042.2349%2038.3163%2041.5294%2039.0217C40.824%2039.7272%2039.8672%2040.1235%2038.8696%2040.1235H37.9117C37.0692%2040.1234%2036.2434%2039.8888%2035.5267%2039.4459C34.8101%2039.003%2034.2309%2038.3693%2033.8542%2037.6157'%20stroke='%23959595'%20stroke-width='4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Image">
+										</span>
+									</div>
+									<p class="about__technology-procent">85%</p>
+									<p class="about__technology-name">Adobe Photoshop</p>
+								</div>
+								<div class="about__technology about__technology_adobeIlustrator">
+									<div class="about__circle circle" style="--p:60; --c: url(#progressGradient);">
+										<svg viewbox="0 0 100 100">
+											<defs>
+												<linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+													<stop offset="0%" stop-color="#fd6f00"></stop>
+													<stop offset="100%" stop-color="#e46400"></stop>
+												</linearGradient>
+											</defs>
+											<circle cx="50" cy="50" r="45"></circle>
+											<circle cx="50" cy="50" r="45"></circle>
+										</svg>
+										<span class="about__circle-img">
+											<img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M40.1235%2030.0926V40.1235M40.1235%2022.5694V22.5945M52.662%2017.554V42.6312C52.662%2045.2915%2051.6052%2047.8429%2049.7241%2049.7241C47.8429%2051.6052%2045.2915%2052.662%2042.6312%2052.662H17.554C14.8937%2052.662%2012.3423%2051.6052%2010.4611%2049.7241C8.57997%2047.8429%207.52315%2045.2915%207.52315%2042.6312V17.554C7.52315%2014.8937%208.57997%2012.3423%2010.4611%2010.4611C12.3423%208.57997%2014.8937%207.52315%2017.554%207.52315H42.6312C45.2915%207.52315%2047.8429%208.57997%2049.7241%2010.4611C51.6052%2012.3423%2052.662%2014.8937%2052.662%2017.554Z'%20stroke='%23959595'%20stroke-width='4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M17.554%2040.1235L20.3752%2032.6003M20.3752%2032.6003L25.0772%2020.0617L29.7791%2032.6003M20.3752%2032.6003H29.7791M32.6003%2040.1235L29.7791%2032.6003'%20stroke='%23959595'%20stroke-width='4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Image">
+										</span>
+									</div>
+									<p class="about__technology-procent">60%</p>
+									<p class="about__technology-name">Adobe Illustrator</p>
+								</div>
+								<div class="about__technology about__technology_adobepremiere">
+									<div class="about__circle circle" style="--p:70; --c: url(#progressGradient);">
+										<svg viewbox="0 0 100 100">
+											<defs>
+												<linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+													<stop offset="0%" stop-color="#fd6f00"></stop>
+													<stop offset="100%" stop-color="#e46400"></stop>
+												</linearGradient>
+											</defs>
+											<circle cx="50" cy="50" r="45"></circle>
+											<circle cx="50" cy="50" r="45"></circle>
+										</svg>
+										<span class="about__circle-img">
+											<img src="data:image/svg+xml,%3csvg%20width='60'%20height='60'%20viewBox='0%200%2060%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M17.1507%2010.7353C25.553%209.80398%2034.0325%209.80398%2042.4348%2010.7353C44.0388%2010.9129%2045.5361%2011.6259%2046.6848%2012.7594C47.8336%2013.8928%2048.5667%2015.3804%2048.7658%2016.9819C49.7612%2025.4934%2049.7612%2034.092%2048.7658%2042.6036C48.5667%2044.2051%2047.8336%2045.6927%2046.6848%2046.8261C45.5361%2047.9595%2044.0388%2048.6726%2042.4348%2048.8502C34.0325%2049.7816%2025.553%2049.7816%2017.1507%2048.8502C15.5467%2048.6726%2014.0494%2047.9595%2012.9006%2046.8261C11.7519%2045.6927%2011.0188%2044.2051%2010.8197%2042.6036C9.82427%2034.092%209.82427%2025.4934%2010.8197%2016.9819C11.0188%2015.3804%2011.7519%2013.8928%2012.9006%2012.7594C14.0494%2011.6259%2015.5467%2010.9129%2017.1507%2010.7353ZM42.8469%207.03605C34.1707%206.07423%2025.4148%206.07423%2016.7386%207.03605C11.7433%207.59219%207.70887%2011.5273%207.12294%2016.5474C6.09358%2025.3476%206.09358%2034.2379%207.12294%2043.0381C7.70887%2048.0582%2011.7408%2051.9933%2016.7386%2052.5519C25.4148%2053.5127%2034.1707%2053.5127%2042.8469%2052.5519C47.8422%2051.9933%2051.8766%2048.0582%2052.4625%2043.0381C53.4918%2034.2379%2053.4918%2025.3476%2052.4625%2016.5474C51.8766%2011.5273%2047.8447%207.59219%2042.8469%207.03357M23.2756%2038.4823H19.9438V20.3211C21.1454%2020.1027%2022.8113%2019.9388%2025.078%2019.9388C27.5359%2019.9388%2029.3384%2020.4577%2030.5127%2021.4408C31.6051%2022.3421%2032.3152%2023.7895%2032.3152%2025.51C32.3152%2027.2579%2031.769%2028.7053%2030.7312%2029.6885C29.3905%2031.0267%2027.2901%2031.6548%2024.9142%2031.6548C24.286%2031.6548%2023.7125%2031.6275%2023.2756%2031.5455V38.4823ZM25.2121%2022.5059C24.286%2022.5059%2023.6306%2022.5879%2023.2756%2022.6698V28.8965C23.6852%2029.0057%2024.2314%2029.033%2024.9142%2029.033C27.4267%2029.033%2028.9561%2027.8041%2028.9561%2025.6466C28.9561%2023.5983%2027.5359%2022.5059%2025.2146%2022.5059M37.01%2038.4823H33.6509V29.47C33.6509%2027.6675%2033.6261%2026.384%2033.5417%2025.1823H36.4638L36.5731%2027.7221H36.6823C37.3377%2025.8378%2038.8944%2024.8819%2040.3145%2024.8819C40.6423%2024.8819%2040.8359%2024.9092%2041.109%2024.9638V28.1318C40.7853%2028.0605%2040.4549%2028.0239%2040.1234%2028.0226C38.5121%2028.0226%2037.4197%2029.0603%2037.1193%2030.5624C37.0516%2030.9043%2037.015%2031.2516%2037.01%2031.6002V38.4823Z'%20fill='%23959595'/%3e%3c/svg%3e" alt="Image">
+										</span>
+									</div>
+									<p class="about__technology-procent">70%</p>
+									<p class="about__technology-name">Adobe Premiere</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-watcher="navigator" id="portfolio" class="portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__body">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="portfolio__info info --hide-element">
+								<h2 class="portfolio__title title">Portfolio</h2>
+							</div>
+							<div class="portfolio__buttons-actions">
+								<div data-fls-watcher="" data-fls-watcher-once="" id="options" data-fls-radio="" class="portfolio__options options --hide-element">
+									<label class="options__item options__item_all">
+										<input class="options__input" checked type="radio" value="all" name="option">
+										<span class="options__text">All</span>
+									</label>
+									<label class="options__item options__item_website">
+										<input class="options__input" type="radio" value="website-design" name="option">
+										<span class="options__text">Website design</span>
+									</label>
+									<label class="options__item options__item_app-mobile">
+										<input class="options__input" type="radio" value="app-mobile-design" name="option">
+										<span class="options__text">App mobile design</span>
+									</label>
+									<label class="options__item options__item_app-desctop">
+										<input class="options__input" type="radio" value="app-desktop" name="option">
+										<span class="options__text">App desktop</span>
+									</label>
+									<label class="options__item">
+										<input class="options__input options__item_braiding" type="radio" value="braiding" name="option">
+										<span class="options__text">Braiding</span>
+									</label>
+								</div>
+							</div>
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-slider="" class="portfolio__slider swiper --hide-element">
+								<div class="portfolio__wrapper swiper-wrapper"></div>
+							</div>
+							<div id="portfolioWorks" class="portfolio__works">
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="website-design" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_1.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">Website design</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="app-mobile-design" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_2-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_2.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">App mobile design</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="app-desktop" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_3-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_3.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">App desktop</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="braiding" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_2-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_2.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">Braiding</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="website-design" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_1.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">Website design</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="app-mobile-design" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_3-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_3.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">App mobile design</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="app-desktop" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_1.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">App desktop</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="braiding" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_3-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_3.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">Braiding</p>
+									</div>
+								</a>
+								<a data-fls-watcher="" data-fls-watcher-once="" href="#" id="cartWorks" data-category="website-design" data-fls-dynamic=".swiper-wrapper, 500" class="portfolio__cart-work portfolio__slide swiper-slide --hide-element">
+									<div class="portfolio__picyures">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/pictures_portfolio_2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/pictures_portfolio_2-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/pictures_portfolio_2.webp">
+										</picture>
+									</div>
+									<div class="portfolio__box-title">
+										<p class="portfolio__name">Name Project</p>
+										<p class="portfolio__categories">Website design</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-watcher="navigator" id="contact-me" class="contact-me">
+					<div class="contact-me__container">
+						<div class="contact-me__body">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="contact-me__info info --hide-element">
+								<h2 class="contact-me__title title">Contact me</h2>
+								<p class="contact-me__text text">Cultivating Connections: Reach Out and Connect with Me</p>
+							</div>
+							<div class="contact-me__box-form">
+								<form action="POST" class="contact-me__form form">
+									<div data-fls-watcher="" data-fls-watcher-once="" class="form__box-input --hide-element">
+										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Name" class="form__input input">
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="form__box-input --hide-element">
+										<input data-fls-input="" autocomplete="off" type="Email" name="form[]" data-error="Помилка" placeholder="Email" class="form__input input">
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="form__box-input --hide-element">
+										<input data-fls-input="" data-fls-input-mask="+38(999) 999-9999" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Phone Number" class="form__input input">
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="form__box-input --hide-element">
+										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Service of Interest" class="form__input input">
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="form__box-input --hide-element">
+										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Timeline" class="form__input input">
+									</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="form__box-input --hide-element">
+										<textarea data-fls-input="" data-fls-input-autoheight="" autocomplete="off" name="form[]" placeholder="Project Details..." data-error="Помилка" class="form__input form__input_textarea input"></textarea>
+									</div>
+								</form>
+								<div data-fls-watcher="" data-fls-watcher-once="" class="contact-me__button --hide-element">
+									<button type="submit" class="contact-me__send button button_black">Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="#" class="footer__link-logo">
+								<img src="data:image/svg+xml,%3csvg%20width='77'%20height='22'%20viewBox='0%200%2077%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.10001%2021.27C1.52001%2021.27%201.02001%2021.06%200.600011%2020.64C0.200011%2020.22%201.11088e-05%2019.72%201.11088e-05%2019.14V2.97002C1.11088e-05%201.97002%200.330011%201.23002%200.990011%200.750019C1.65001%200.250018%202.66001%201.80006e-05%204.02001%201.80006e-05V17.79H12.12C13.06%2017.79%2013.77%2018.09%2014.25%2018.69C14.73%2019.27%2014.97%2020.13%2014.97%2021.27H2.10001ZM24.7952%2021.54C23.1552%2021.54%2021.6552%2021.22%2020.2952%2020.58C18.9352%2019.92%2017.8552%2019.03%2017.0552%2017.91C16.2752%2016.79%2015.8852%2015.57%2015.8852%2014.25V7.26002C15.8852%205.94002%2016.2752%204.73002%2017.0552%203.63002C17.8552%202.51002%2018.9352%201.63002%2020.2952%200.990018C21.6552%200.330018%2023.1552%201.80006e-05%2024.7952%201.80006e-05C26.4352%201.80006e-05%2027.9352%200.330018%2029.2952%200.990018C30.6752%201.63002%2031.7552%202.51002%2032.5352%203.63002C33.3352%204.73002%2033.7352%205.94002%2033.7352%207.26002V14.25C33.7352%2015.57%2033.3352%2016.79%2032.5352%2017.91C31.7552%2019.03%2030.6752%2019.92%2029.2952%2020.58C27.9352%2021.22%2026.4352%2021.54%2024.7952%2021.54ZM24.7952%2018.03C26.2952%2018.03%2027.4952%2017.68%2028.3952%2016.98C29.2952%2016.26%2029.7452%2015.33%2029.7452%2014.19V7.35002C29.7452%206.19002%2029.2952%205.26002%2028.3952%204.56002C27.4952%203.84002%2026.2952%203.48002%2024.7952%203.48002C23.3152%203.48002%2022.1252%203.84002%2021.2252%204.56002C20.3252%205.26002%2019.8752%206.19002%2019.8752%207.35002V14.19C19.8752%2015.33%2020.3252%2016.26%2021.2252%2016.98C22.1252%2017.68%2023.3152%2018.03%2024.7952%2018.03ZM46.1822%2021.54C44.4022%2021.54%2042.8122%2021.2%2041.4122%2020.52C40.0322%2019.84%2038.9522%2018.89%2038.1722%2017.67C37.3922%2016.45%2037.0022%2015.06%2037.0022%2013.5V7.98002C37.0022%206.42002%2037.3822%205.04002%2038.1422%203.84002C38.9222%202.62002%2039.9922%201.68002%2041.3522%201.02002C42.7122%200.340018%2044.2722%201.80006e-05%2046.0322%201.80006e-05C47.7922%201.80006e-05%2049.3522%200.270018%2050.7122%200.810018C52.0922%201.33002%2053.1622%202.06002%2053.9222%203.00002C54.6822%203.94002%2055.0622%205.02002%2055.0622%206.24002C55.0622%206.98002%2054.8122%207.56002%2054.3122%207.98002C53.8322%208.40002%2053.1822%208.61002%2052.3622%208.61002C51.9622%208.61002%2051.5222%208.55002%2051.0422%208.43002C51.0822%207.95002%2051.1022%207.48002%2051.1022%207.02002C51.1022%205.96002%2050.6322%205.10002%2049.6922%204.44002C48.7522%203.78002%2047.5322%203.45002%2046.0322%203.45002C44.5522%203.45002%2043.3422%203.87002%2042.4022%204.71002C41.4822%205.55002%2041.0222%206.64002%2041.0222%207.98002V13.5C41.0222%2014.84%2041.5022%2015.94%2042.4622%2016.8C43.4222%2017.66%2044.6622%2018.09%2046.1822%2018.09C47.6622%2018.09%2048.8622%2017.75%2049.7822%2017.07C50.7222%2016.37%2051.1922%2015.47%2051.1922%2014.37V13.44H48.6122C47.8522%2013.44%2047.2322%2013.15%2046.7522%2012.57C46.2722%2011.97%2046.0322%2011.2%2046.0322%2010.26H53.3222C53.8822%2010.26%2054.3322%2010.43%2054.6722%2010.77C55.0122%2011.11%2055.1822%2011.56%2055.1822%2012.12V14.46C55.1822%2015.84%2054.8022%2017.07%2054.0422%2018.15C53.2822%2019.21%2052.2122%2020.04%2050.8322%2020.64C49.4722%2021.24%2047.9222%2021.54%2046.1822%2021.54ZM67.3179%2021.54C65.6779%2021.54%2064.1779%2021.22%2062.8179%2020.58C61.4579%2019.92%2060.3779%2019.03%2059.5779%2017.91C58.7979%2016.79%2058.4079%2015.57%2058.4079%2014.25V7.26002C58.4079%205.94002%2058.7979%204.73002%2059.5779%203.63002C60.3779%202.51002%2061.4579%201.63002%2062.8179%200.990018C64.1779%200.330018%2065.6779%201.80006e-05%2067.3179%201.80006e-05C68.9579%201.80006e-05%2070.4579%200.330018%2071.8179%200.990018C73.1979%201.63002%2074.2779%202.51002%2075.0579%203.63002C75.8579%204.73002%2076.2579%205.94002%2076.2579%207.26002V14.25C76.2579%2015.57%2075.8579%2016.79%2075.0579%2017.91C74.2779%2019.03%2073.1979%2019.92%2071.8179%2020.58C70.4579%2021.22%2068.9579%2021.54%2067.3179%2021.54ZM67.3179%2018.03C68.8179%2018.03%2070.0179%2017.68%2070.9179%2016.98C71.8179%2016.26%2072.2679%2015.33%2072.2679%2014.19V7.35002C72.2679%206.19002%2071.8179%205.26002%2070.9179%204.56002C70.0179%203.84002%2068.8179%203.48002%2067.3179%203.48002C65.8379%203.48002%2064.6479%203.84002%2063.7479%204.56002C62.8479%205.26002%2062.3979%206.19002%2062.3979%207.35002V14.19C62.3979%2015.33%2062.8479%2016.26%2063.7479%2016.98C64.6479%2017.68%2065.8379%2018.03%2067.3179%2018.03Z'%20fill='url(%23paint0_linear_587_923)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_587_923'%20x1='-1.76999'%20y1='9.14099'%20x2='78.23'%20y2='9.14099'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FA6E00'/%3e%3cstop%20offset='1'%20stop-color='%23E60026'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Image">
+							</a>
+						</div>
+						<div class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#home" class="footer__link">Home</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#services" class="footer__link">Services</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#about-me" class="footer__link">About me</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#portfolio" class="footer__link">Portfolio</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto-top="30" data-fls-scrollto="#contact-me" class="footer__link">Contact me</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__buttons-social social">
+							<a href="#" class="social__link --icon-inst"></a>
+							<a href="#" class="social__link --icon-in"></a>
+							<a href="#" class="social__link --icon-dribbble"></a>
+							<a href="#" class="social__link --icon-behance"></a>
+						</div>
+						<div class="footer__contact">
+							<a href="#" class="footer__contact-info footer__mail --icon-mail">Mahmood.fazile7005@gmail.com</a>
+							<a href="#" class="footer__contact-info footer__phone --icon-phone">+93 729 107 005</a>
+						</div>
+						<div class="footer__copyright">
+							<p class="footer__copyright-text">&copy;Designed by @mahmood.fazile UI/UX designer</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

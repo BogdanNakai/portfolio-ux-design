@@ -7,7 +7,7 @@ import { isMobile, uniqArray, FLS } from "@js/common/functions.js";
 // data-fls-watcher-margin -відступ
 // data-fls-watcher-threshold - відсоток показу об'єкта для спрацьовування
 // data-fls-watcher-once - спостерігати лише один раз
-// -watcher-view - клас який додається за появи об'єкта
+// --watcher-view - клас який додається за появи об'єкта
 
 class ScrollWatcher {
 	constructor(props) {
@@ -148,7 +148,11 @@ class ScrollWatcher {
 	}
 	// Функція виведення в консоль
 	scrollWatcherLogging(message, vars) {
-		this.config.logging ? FLS(message, vars) : null;
+		if (this.config.logging) {
+			FLS(message, vars)
+		} else {
+			null;
+		}
 	}
 	// Функція обробки спостереження
 	scrollWatcherCallback(entry, observer) {

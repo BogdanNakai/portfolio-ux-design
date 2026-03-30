@@ -398,11 +398,14 @@ circle {
 	stroke: rgba(217, 217, 217, 0.2);
 }
 
-circle:last-child {
-	/* Використовуємо посилання на градієнт */
-	stroke: var(--c);
-	stroke-dasharray: 283;
-	stroke-dashoffset: calc(283 - (283 * var(--p)) / 100);
-	stroke-linecap: round;
-	transition: stroke-dashoffset 0.6s ease;
+
+.--hide-element {
+	transition: all 0.25s ease 0.18s;
+	transform: translate(0, 15px);
+	opacity: 0;
+}
+
+.--watcher-view {
+	transform: translate(0, 0px);
+	opacity: 1;
 }

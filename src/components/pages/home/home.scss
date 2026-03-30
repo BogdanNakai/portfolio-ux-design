@@ -390,6 +390,104 @@
 		flex-direction: column;
 		@include adaptiveValue("padding-right", 35, 20);
 		@include adaptiveValue("padding-left", 35, 20);
+
+
+		circle:last-child {
+			stroke: var(--c);
+			stroke-dasharray: 283;
+
+			stroke-linecap: round;
+			transition: stroke-dashoffset 0.6s ease;
+			animation-duration: 2s;
+			transition: stroke-dashoffset 1s;
+			animation-delay: 0.5s;
+		}
+
+		&_figma {
+
+			.--watcher-view & {
+				circle:last-child {
+					animation-name: procent100;
+					stroke-dashoffset: calc(283 - (283 * 100) / 100);
+				}
+			}
+
+			@keyframes procent100 {
+				0% {
+					stroke-dashoffset: calc(283 - (283 * 0) / 100);
+				}
+
+				100% {
+					stroke-dashoffset: calc(283 - (283 * 100) / 100);
+				}
+			}
+		}
+
+		&_adobeXd {
+			.--watcher-view & {
+				circle:last-child {
+					animation-name: procent100;
+					stroke-dashoffset: calc(283 - (283 * 100) / 100);
+				}
+			}
+		}
+
+		&_adobePhotoShop {
+			.--watcher-view & {
+				circle:last-child {
+					animation-name: procent85;
+					stroke-dashoffset: calc(283 - (283 * 85) / 100);
+				}
+			}
+
+			@keyframes procent85 {
+				0% {
+					stroke-dashoffset: calc(283 - (283 * 0) / 100);
+				}
+
+				100% {
+					stroke-dashoffset: calc(283 - (283 * 85) / 100);
+				}
+			}
+		}
+
+		&_adobeIlustrator {
+			.--watcher-view & {
+				circle:last-child {
+					animation-name: procent60;
+					stroke-dashoffset: calc(283 - (283 * 60) / 100);
+				}
+			}
+
+			@keyframes procent60 {
+				0% {
+					stroke-dashoffset: calc(283 - (283 * 0) / 100);
+				}
+
+				100% {
+					stroke-dashoffset: calc(283 - (283 * 60) / 100);
+				}
+			}
+		}
+
+		&_adobepremiere {
+			.--watcher-view & {
+				circle:last-child {
+					animation-name: procent70;
+					stroke-dashoffset: calc(283 - (283 * 70) / 100);
+				}
+			}
+
+			@keyframes procent70 {
+				0% {
+					stroke-dashoffset: calc(283 - (283 * 0) / 100);
+				}
+
+				100% {
+					stroke-dashoffset: calc(283 - (283 * 70) / 100);
+				}
+			}
+		}
 	}
 
 	&__circle {
@@ -429,6 +527,7 @@
 	}
 
 	&__technology-name {
+		text-align: center;
 		font-weight: 700;
 		@include adaptiveValue("font-size", 24, 20);
 		color: var(--foundation--white-dark);
@@ -482,7 +581,7 @@
 			width: auto !important;
 		}
 
-	
+
 	}
 
 	&__picyures {
