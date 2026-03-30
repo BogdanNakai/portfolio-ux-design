@@ -168,12 +168,27 @@ body {
 	border-radius: 8px;
 	width: 141px;
 	height: 43px;
-	background: linear-gradient(129deg, #fd6f00 0%, #e46400 100%);
+	background-color: #fd6f00;
 
 	font-weight: 700;
 	@include adaptiveValue("font-size", 16, 14);
 	letter-spacing: 0.03em;
 	color: #fff;
+	transition: all 0.2s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #ff9544;
+		}
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+
+	&:focus {
+		background-color: #ff9544;
+	}
 
 	@media (max-width: toEm($mobile)) {
 		width: 111px;
@@ -198,12 +213,29 @@ body {
 		height: auto;
 		color: var(--foundation--white-dark);
 
+
 		@media (max-width:toEm($mobile)) {
 			padding: 10px 30px;
 		}
 
 		@media (max-width: toEm($mobileSmall)) {
 			padding: 8px 20px;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #fff;
+				color: var(--foundation--black-darker);
+			}
+		}
+
+		&:active {
+			transform: scale(0.98);
+		}
+
+		&:focus {
+			background-color: #fff;
+			color: var(--foundation--black-darker);
 		}
 	}
 
@@ -264,6 +296,32 @@ body {
 		border: 0.70px solid var(--foundation--white-darker);
 		padding: toRem(8);
 		background-color: rgba(255, 255, 255, 0.04);
+		transition: all 0.25s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.15);
+				background-color: #ededed;
+
+				&::before {
+					color: #000;
+				}
+			}
+
+		}
+
+		&:active {
+			background-color: #ededed;
+			transform: scale(0.95);
+		}
+
+		&:focus {
+			background-color: #ededed;
+
+			&::before {
+				color: #000;
+			}
+		}
 	}
 }
 

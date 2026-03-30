@@ -32,6 +32,22 @@
 	&__link {
 		display: block;
 		padding: toRem(8);
+		transition: all 0.2s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--foundation--orange-normal)
+			}
+		}
+
+		&:active {
+			transform: scale(0.98);
+			color: var(--foundation--orange-normal)
+		}
+
+		&:focus {
+			color: var(--foundation--orange-normal)
+		}
 	}
 
 	&__buttons-social {}
@@ -51,6 +67,22 @@
 		display: flex;
 		align-items: center;
 		gap: toRem(14);
+		transition: all 0.2s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--foundation--orange-normal)
+			}
+		}
+
+		&:active {
+			transform: scale(0.98);
+			color: var(--foundation--orange-normal)
+		}
+
+		&:focus {
+			color: var(--foundation--orange-normal)
+		}
 
 		&::before {
 			font-size: toRem(24);

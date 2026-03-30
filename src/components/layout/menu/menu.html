@@ -3,20 +3,20 @@
 	<nav class="menu__body">
 		<ul class="menu__list">
 			<each loop='item in [
-					{"href": "#","ancor": "Home"},
-					{"href": "#","ancor": "Services"},
-					{"href": "#","ancor": "About me"},
-					{"href": "#","ancor": "Portfolio"},
-					{"href": "#","ancor": "Contact me"}
+					{"href": "","ancor": "Home" ,"idHesh": "home"},
+					{"href": "","ancor": "Services","idHesh": "services"},
+					{"href": "","ancor": "About me","idHesh": "about-me"},
+					{"href": "","ancor": "Portfolio","idHesh": "portfolio"},
+					{"href": "","ancor": "Contact me","idHesh": "contact-me"}
 				]'>
 				<if condition="'[[active]]' === '[[item.ancor]]'">
 					<li class="menu__item">
-						<a href="[[item.href]]" class="menu__link menu__link--active">[[item.ancor]]</a>
+						<a data-fls-scrollto-header data-fls-scrollto-top="30" data-fls-scrollto="#[[item.idHesh]]" href="[[item.href]]" class="menu__link">[[item.ancor]]</a>
 					</li>
 				</if>
 				<else>
 					<li class="menu__item">
-						<a href="[[item.href]]" class="menu__link">[[item.ancor]]</a>
+						<a data-fls-scrollto-header data-fls-scrollto-top="30" data-fls-scrollto="#[[item.idHesh]]" href="[[item.href]]" class="menu__link">[[item.ancor]]</a>
 					</li>
 				</else>
 			</each>

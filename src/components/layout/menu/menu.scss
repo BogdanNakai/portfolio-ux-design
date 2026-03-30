@@ -1,8 +1,8 @@
 .menu {
 
-	@media (min-width: toEm($mobile)){
-		  position: relative;
-		  z-index: 3;
+	@media (min-width: toEm($mobile)) {
+		position: relative;
+		z-index: 3;
 	}
 
 	// .menu__icon
@@ -29,7 +29,8 @@
 				}
 			}
 		}
-		@media (max-width: toEm(425)){
+
+		@media (max-width: toEm(425)) {
 			width: 100%;
 		}
 	}
@@ -48,8 +49,8 @@
 
 	// .menu__item
 	&__item {
-		@media (max-width: toEm($mobile)){
-			 width: 100%; 
+		@media (max-width: toEm($mobile)) {
+			width: 100%;
 		}
 	}
 
@@ -63,10 +64,43 @@
 		letter-spacing: 0.03em;
 		text-align: justify;
 		color: var(--foundation--white-dark);
+		transition: all 0.25s;
 
 		@media (max-width: toEm($mobile)) {
 			width: 100%;
 		}
+
+		&.--navigator-active {
+			color: var(--foundation--orange-normal);
+			font-weight: 700;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.09);
+				color: var(--foundation--orange-normal);
+			}
+
+			&:focus {
+				color: var(--foundation--orange-normal);
+				font-weight: 700;
+			}
+
+			&:active {
+				color: var(--foundation--orange-normal);
+				font-weight: 700;
+				transform: scale(0.95);
+			}
+
+
+		}
+
+
+		&--active {
+			color: var(--foundation--orange-normal);
+			font-weight: 700;
+		}
+
 	}
 
 	@media (max-width: toEm($mobile)) {
